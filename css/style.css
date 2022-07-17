@@ -140,7 +140,6 @@ footer {
   background: hsl(249deg, 10%, 26%);
   color: #fff;
   box-shadow: 0px 0px 0px 3px #ff4747;
-  visibility: hidden;
   padding: 1rem;
   border-radius: 15px;
   clip-path: circle(7% at 6.6% 42%);
@@ -157,6 +156,7 @@ footer:hover {
     right: auto;
     bottom: auto;
     left: auto;
+    margin-top: 2rem;
     border-radius: 0;
     clip-path: circle(100%);
   }

@@ -2,7 +2,7 @@ footer{
   @include position(absolute, auto, auto, 1rem, 1rem);
   @include bg-color($neutral-dark-blue-04);
   @include shadow(3, darken($primary-red-04, 10));
-  visibility: hidden;
+  // visibility: hidden;
   padding: 1rem;
   border-radius: 15px;
   clip-path: circle(7% at 6.6% 42%);
@@ -13,6 +13,8 @@ footer{
   }
   @media (max-width:$Tablet) {
     @include position(relative);
+    margin-top: 2rem;
+
     border-radius: 0;
     clip-path: circle(100% );
     &:hover{background-color: $neutral-dark-blue-04;}
