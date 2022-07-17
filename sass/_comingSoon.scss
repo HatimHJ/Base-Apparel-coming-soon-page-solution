@@ -1,0 +1,37 @@
+@import './navbar';
+@import './content';
+
+
+
+.coming-soon{
+    @include bg-color(url(../images/bg-pattern-desktop.svg));
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 30% 70%;
+  padding-left: 250px;
+    
+    .left-img {
+      display: block;
+      width: 100%;
+      grid-row: 1 / span 2;
+      grid-column: -2;
+
+      &.mobile{
+        display: none;
+      }
+      @media (max-width:$Tablet) {
+        &.desktop{
+          display: none;
+        }
+        &.mobile{
+          display: block;
+
+        }
+        
+      }
+    }
+    @media (max-width:$Tablet) {
+      padding-left: 0;
+      display: block;
+    }
+}

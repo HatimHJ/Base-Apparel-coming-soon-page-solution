@@ -1,0 +1,74 @@
+.content{
+  @media (max-width:$Tablet) {
+    text-align: center;
+    padding-top: 60px;
+  }
+  p{
+    color: $primary-red-05;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 20px;
+  }
+  h1{
+    color: $neutral-grayish-red-05;
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 20px;    
+  }
+  .desc{
+    max-width: 450px;
+    letter-spacing: normal;
+    font-size: 1rem;
+    padding:  1.5rem 0;
+    @media (max-width:$Tablet) {
+      margin:1rem auto;
+    }
+  }
+  .input-container{
+    position: relative;
+    max-width: 440px;
+    font-size: .9rem;
+    @media (max-width:$Tablet) {
+      margin: auto;
+    }
+    .email{
+      border-radius: 2em;
+      padding: 1.4em 3em;
+      border: 1px solid $primary-red-05;
+      width: 100%;
+      opacity: .75;
+
+      &::placeholder {color:$primary-red-05;}
+      &:focus{outline: none;}
+    }
+    button{
+      right: 0;
+      top: 0px;
+      position: absolute;
+      background: $gradient-red-05;
+      border-radius: 2em;
+      padding: 1em 3em;      
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      &:focus{outline: none;}
+      &:hover{
+        background: lighten($color: (#f8bfbf), $amount: 5);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+    .error{
+      color: $secondary-red-05;
+      bottom: -35px;
+      position: absolute;
+      left: 20px;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    img[alt=error]{
+      position: absolute;
+      right: 120px;
+      top: 18px;
+      visibility: hidden;
+    }
+  }
+}

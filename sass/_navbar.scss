@@ -1,0 +1,7 @@
+.nav{
+  padding-top: 60px;
+  @media (max-width:$Tablet) {
+    padding:60px;
+    padding-right: 0;
+  }
+}

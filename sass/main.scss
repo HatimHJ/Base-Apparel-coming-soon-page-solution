@@ -1,0 +1,20 @@
+$Mobile: 375px;
+$Tablet: 992px;
+$Desktop: 1440px;
+$border-radius:.5rem;
+
+@import './utils/color';
+@import './utils/typography';
+@import './utils/buttons';
+@import './utils/mixin';
+@import './comingSoon';
+@import './footer';
+
+
+
+*{@include reset();}
+
+body{
+  font-family: $font-family-Josefin;
+  font-size: 16px;
+}
